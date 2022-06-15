@@ -1,9 +1,9 @@
-
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -91,7 +91,20 @@ footer {
     font-size: 1rem;
 }
 
-.about-ground img{
+.tema button {
+    position: absolute;
+    top: 18%;
+    right: 2%;
+    align-self: flex-end;
+    font-size: 14px;
+    font-weight: 350;
+    padding: 8px 16px;
+    background: #ecf4ff;
+    border-radius: 100px;
+    min-height: 20px;
+}
+
+.about-ground img {
     display: block;
     width: 80%;
     margin: auto;
@@ -109,7 +122,7 @@ footer {
     box-shadow: 6px 6px 6px #0e1d2f;
     padding: 64px;
     width: auto;
-  }
+}
 
 .about-conteudo-conhecimento {
     color: white;
@@ -117,7 +130,7 @@ footer {
     flex-direction: row;
     margin: 0 auto;
     font-size: 14px;
-  }
+}
 
 .about-conteudo-imagem img {
     width: 100%;
@@ -197,16 +210,44 @@ footer {
     margin: 10px 15px;
 }
 
+
 @media(min-width: 576px) {
-    
+
     html {
         font-size: 20px;
     }
 
 }
 
+.dark {
+    background: linear-gradient(236.85deg, #1d3149 27.26%, #1c2025 96.03%);
+}
+
+.dark .portfolio-titulo {
+    color: #f6f6f6;
+}
+
+.dark .portfolio-projeto {
+    color: #f6f6f6;
+}
+
+.dark .tema button {
+    background: #1c1c1c;
+    color: #ffffff;
+    border: 2px solid #f7f7f7;
+}
+
+.dark .conteudo-perfil {
+    background-image: url(img/background-noite.webp);
+    background-position: bottom;
+    background-size: 70%;
+}
+
+
+
+
 @media(min-width: 768px) {
-    
+
     html {
         font-size: 24px;
     }
@@ -214,7 +255,7 @@ footer {
     .about-conteudo {
         flex-direction: row;
         justify-content: space-between;
-        
+
     }
 
     .portfolio-item {
@@ -261,5 +302,19 @@ footer {
 
     .menu li {
         font-size: 18px;
+    }
+
+    .dark .about-conteudo-item {
+        border-left-style: solid;
+        border-left-width: 2px;
+        border-left-color: #9ab0c5;
+    }
+
+    .tema button {
+        top: 20%;
+        right: 3%;
+        font-size: 24px;
+        font-weight: 400;
+        background: #ecf4ff;
     }
 }
