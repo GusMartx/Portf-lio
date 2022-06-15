@@ -1,0 +1,265 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer {
+    height: 130px;
+    background-color: #2C3E50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho {
+    background-color: #2C3E50;
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+}
+
+
+.cabecalho-conteudo {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho-conteudo a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.cabecalho-conteudo-brand {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.conteudo {
+    background-image: url(img/terraria-icone.jpg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: bottom;
+}
+
+.conteudo-perfil {
+    background-image: url(img/background.png);
+    color: white;
+    padding: 160px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-perfil-imagem img {
+    width: 150px;
+    height: 150px;
+    border-radius: 460px;
+}
+
+.conteudo-perfil-nome {
+    margin: 35px 0 0 0;
+    font-size: 2rem;
+}
+
+.conteudo-perfil-descricao {
+    margin: 0 15px 0 15px;
+    font-size: 1rem;
+}
+
+.about-ground img{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.about-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #003d92c4;
+    background-size: 300px;
+    color: white;
+    margin: 64px 100px 0 100px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px #0e1d2f;
+    padding: 64px;
+    width: auto;
+  }
+
+.about-conteudo-conhecimento {
+    color: white;
+    display: block;
+    flex-direction: row;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+
+.about-conteudo-imagem img {
+    width: 100%;
+    min-width: 130px;
+    max-height: 350px;
+    background-color: #0e1d2f;
+    padding: 25px 0 2px 0;
+    border-radius: 45px;
+    border-style: solid;
+    border-width: thick;
+    border-color: #5b7996;
+    align-items: center;
+}
+
+.about-conteudo-itens li {
+    margin: 5px 30px 0 0;
+    padding: 0;
+    justify-items: left;
+    list-style: none;
+
+}
+
+.about-conteudo-itens h5 {
+    margin: 5px 10px 0 10px;
+    color: black;
+    font-size: 20px;
+}
+
+.about-conteudo-itens p {
+    margin: 0 10px 10px 10px;
+    font-size: 14px;
+}
+
+#portfolio {
+    width: 100%;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.portfolio-titulo {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2C3E50;
+    margin: 60px 0 10px 0;
+}
+
+.portfolio-projeto {
+    font-size: 1rem;
+    text-align: center;
+    color: #2C3E50;
+    margin: 35px 0 25px 0;
+}
+
+.portfolio-conteudo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: calc(100% - 40px);
+    max-height: 420px;
+    border-radius: 10px;
+    margin: 20px 20px 30px 20px;
+}
+
+.rodape-titulo {
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.rodape-conteudo img {
+    width: 45px;
+    height: 45px;
+    margin: 10px 15px;
+}
+
+@media(min-width: 576px) {
+    
+    html {
+        font-size: 20px;
+    }
+
+}
+
+@media(min-width: 768px) {
+    
+    html {
+        font-size: 24px;
+    }
+
+    .about-conteudo {
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .portfolio-item {
+        width: 580px;
+    }
+
+    .about-conteudo-imagem img {
+        width: 350px;
+    }
+
+    .about-conteudo-item {
+        border-left-style: solid;
+        border-left-width: 2px;
+        border-left-color: #2C3E50;
+    }
+
+    .about-conteudo-itens h5 {
+        font-size: 30px;
+        margin: 0 20px 0 5px;
+    }
+
+    .about-conteudo-itens p {
+        font-size: 20px;
+        margin: 0 20px 15px 5px;
+    }
+
+    .cabecalho {
+        display: flex;
+    }
+
+    .cabecalho-conteudo {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-conteudo-conhecimento {
+        font-size: 20px;
+    }
+
+    .cabecalho-conteudo-brand {
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+
+    .menu li {
+        font-size: 18px;
+    }
+}
