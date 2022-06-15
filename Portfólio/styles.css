@@ -93,8 +93,8 @@ footer {
 
 .tema button {
     position: absolute;
-    top: 18%;
-    right: 2%;
+    top: 130px;
+    right: 10px;
     align-self: flex-end;
     font-size: 14px;
     font-weight: 350;
@@ -231,8 +231,9 @@ footer {
 
 .dark .conteudo-perfil {
     background-image: url(img/background-noite.webp);
-    background-position: bottom;
-    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300%;
 }
 
 @media(min-width: 576px) {
@@ -308,8 +309,8 @@ footer {
     }
 
     .tema button {
-        top: 20%;
-        right: 3%;
+        top: 120px;
+        right: 30px;
         font-size: 24px;
         font-weight: 400;
         background: #ecf4ff;
