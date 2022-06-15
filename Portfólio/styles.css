@@ -211,14 +211,6 @@ footer {
 }
 
 
-@media(min-width: 576px) {
-
-    html {
-        font-size: 20px;
-    }
-
-}
-
 .dark {
     background: linear-gradient(236.85deg, #1d3149 27.26%, #1c2025 96.03%);
 }
@@ -243,8 +235,13 @@ footer {
     background-size: 70%;
 }
 
+@media(min-width: 576px) {
 
+    html {
+        font-size: 20px;
+    }
 
+}
 
 @media(min-width: 768px) {
 
